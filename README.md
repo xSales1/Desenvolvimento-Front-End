@@ -1,3 +1,101 @@
+ # Projeto01
+
+ Projeto simples com páginas HTML estáticas para demonstração e prática.
+
+ Resumo
+ ------
+
+ - Linguagem: HTML, (opcionalmente) CSS e JavaScript
+ - Estrutura: páginas estáticas prontas para abrir localmente
+
+ Arquivos principais
+ -------------------
+
+ - `index.html` — Página principal
+ - `Cadastro.html` — Formulário de cadastro (exemplo)
+ - `Projetos.html` — Lista/descrição de projetos
+
+ Objetivo
+ --------
+
+ Fornecer um ponto de partida leve para aprender criação de páginas estáticas, testar layouts e experimentar formulários sem precisar de backend.
+
+ Como executar (modo rápido)
+ ---------------------------
+
+ 1. Abra `index.html` diretamente no navegador (arrastar/soltar ou Arquivo → Abrir).
+
+ Como executar (recomendado: servidor local)
+ -------------------------------------------
+
+ Usar um servidor local evita problemas com rotas e requisições que exigem HTTP.
+
+ - Com Python 3 (na raiz do projeto):
+
+ ```powershell
+ python -m http.server 8000
+ ```
+
+ Abra: http://localhost:8000
+
+ - Com Node.js (http-server):
+
+ ```powershell
+ npm install -g http-server
+ http-server -p 8000
+ ```
+
+ Fluxo de desenvolvimento
+ ------------------------
+
+ 1. Crie uma branch para mudanças não triviais:
+
+ ```powershell
+ git checkout -b feat/minha-mudanca
+ ```
+
+ 2. Comandos úteis:
+
+ ```powershell
+ git status
+ git add .
+ git commit -m "Descrição da mudança"
+ git push origin <sua-branch>
+ ```
+
+ Contribuição
+ ------------
+
+ 1. Fork do repositório
+ 2. Clone para sua máquina
+ 3. Crie uma branch, implemente alterações e abra um Pull Request
+
+ Boas práticas sugeridas
+ -----------------------
+
+ - Separar CSS e JS em pastas `css/` e `js/` para organização
+ - Usar um arquivo `.gitignore` para evitar commitar arquivos pessoais
+ - Adicionar testes manuais e documentação para componentes maiores
+
+ Licença
+ -------
+
+ Este projeto ainda não tem uma licença específica. Se quiser torná-lo permissivo, recomendo usar a licença MIT. Posso adicionar um arquivo `LICENSE` com o texto da MIT se desejar.
+
+ Contato
+ -------
+
+ - Gabriel Sales — gabriel_salessilva@hotmail.com
+
+ ----
+
+ Se quiser, eu posso:
+
+ - adicionar automaticamente um `.gitignore` básico para projetos web e commitar;
+ - criar um arquivo `LICENSE` (MIT) e commitar;
+ - abrir a página do repositório no navegador para conferência.
+
+ Diga qual das opções prefere e eu executo as ações seguintes.
 # Projeto01
 
 Repositório com páginas HTML estáticas usadas como exemplo/sandbox.
