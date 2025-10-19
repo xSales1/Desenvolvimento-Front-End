@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ONG ProPet - Cuidando e Encontrando Lares</title> 
+        
+        <!-- CSS Design System -->
+        <link rel="stylesheet" href="css/design-system.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/components.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!-- Menu Toggle (Checkbox Hack) -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-input">
+        
+        <!-- Header -->
+        <header class="header-fixed">
+            <div class="container">
+                <nav class="nav-main">
+                    <!-- Logo -->
+                    <a href="index.html" class="nav-brand">
+                        <img src="prop1.jpg" alt="Logo da ONG ProPet" class="logo">
+                        <h1 class="brand-title">ProPet</h1>
+                    </a>
+                    
+                    <!-- Hamburger Menu -->
+                    <label for="menu-toggle" class="menu-toggle-label" aria-label="Menu">
+                        <span class="hamburger-icon"></span>
+                    </label>
+                    
+                    <!-- Navigation -->
+                    <nav class="nav-desktop" aria-label="Navegação principal">
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link active" aria-current="page">Nosso Lar</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="Projetos.html" class="nav-link">
+                                    Projetos
+                                    <svg class="icon-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="Projetos.html#voluntariado" class="dropdown-item">Voluntariado</a></li>
+                                    <li><a href="Projetos.html#doacoes" class="dropdown-item">Doações</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Cadastro-novo.html" class="nav-link">Cadastro</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </nav>
+            </div>
+        </header>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="badge badge-primary">🐾 Desde 2020</span>
+                        <h2 class="hero-title" style="color: white;">Transformando Vidas com Amor e Dedicação</h2>
+                        <p class="hero-subtitle" style="color: white;">
+                            Na ProPet, resgatamos animais em situação de vulnerabilidade e os preparamos para encontrar famílias amorosas. 
+                            Sua colaboração é essencial: com doações, garantimos alimentação de qualidade, cuidados veterinários completos e um lar temporário seguro até a adoção.
+                        </p>
+                        <div class="hero-cta">
+                            <a href="Cadastro-novo.html" class="btn btn-primary btn-lg">
+                                <svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 5V15M5 10H15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                                Quero Ajudar
+                            </a>
+                            <a href="Projetos.html" class="btn btn-outline btn-lg" style="background-color: white; color: var(--color-primary-600); border-color: white;">Nossos Projetos</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- História -->
+            <section class="section">
+                <div class="container">
+                    <h2 class="section-title">Nossa História</h2>
+                    <p class="section-subtitle">Uma jornada de amor e dedicação aos animais</p>
+                    
+                    <div class="content-grid">
+                        <div class="content-text">
+                            <h3>Como Tudo Começou</h3>
+                            <p>
+                                A ProPet nasceu em 2020, quando um grupo de amantes de animais decidiu fazer a diferença na vida dos pets abandonados.
+                                Localizada em uma área tranquila da cidade, nossa ONG começou com um pequeno abrigo que acolhia apenas 10 animais.
+                                Hoje, nos orgulhamos de ter expandido para um espaço que pode abrigar mais de 100 pets entre cães e gatos.
+                            </p>
+                            
+                            <p>
+                                Ao longo dos anos, nossa equipe dedicada de voluntários e profissionais tem trabalhado incansavelmente para resgatar,
+                                cuidar e encontrar novos lares para esses animais. Com o apoio da comunidade, conseguimos realizar campanhas de adoção, 
+                                eventos de arrecadação de fundos e parcerias com clínicas veterinárias para garantir que todos os nossos pets recebam 
+                                o melhor cuidado possível.
+                            </p>
+                            
+                            <div class="alert alert-info">
+                                <div class="alert-content">
+                                    <p class="alert-title">💙 Nossa Conquista</p>
+                                    <p>Cada história de adoção é uma vitória para nós, e cada sorriso de gratidão dos novos tutores nos motiva a continuar 
+                                    nossa missão. Junte-se a nós nessa jornada de amor e transformação!</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="content-image">
+                            <img src="prop.JPG" alt="ONG ProPet em ação">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Cards: Missão, Visão e Valores -->
+            <section class="section section-alt">
+                <div class="container">
+                    <div class="card-grid">
+                        <!-- Missão -->
+                        <article class="info-card">
+                            <span class="info-card-icon">🎯</span>
+                            <h3 class="info-card-title">Nossa Missão</h3>
+                            <p class="info-card-text">
+                                Resgatar, cuidar e encontrar lares amorosos para animais abandonados, 
+                                promovendo o bem-estar animal e a conscientização sobre a importância da adoção responsável.
+                            </p>
+                        </article>
+                        
+                        <!-- Visão -->
+                        <article class="info-card">
+                            <span class="info-card-icon">👁️</span>
+                            <h3 class="info-card-title">Visão</h3>
+                            <p class="info-card-text">
+                                Ser referência em resgate e adoção de animais, inspirando a comunidade a valorizar e proteger a vida animal.
+                            </p>
+                        </article>
+                        
+                        <!-- Valores -->
+                        <article class="info-card">
+                            <span class="info-card-icon">⭐</span>
+                            <h3 class="info-card-title">Valores</h3>
+                            <ul class="info-card-text">
+                                <li>✓ Compromisso com o bem-estar animal</li>
+                                <li>✓ Transparência e ética</li>
+                                <li>✓ Respeito e amor pelos animais</li>
+                                <li>✓ Engajamento comunitário</li>
+                                <li>✓ Trabalho em equipe</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Contato -->
+            <section class="cta-section">
+                <div class="container">
+                    <div class="cta-content">
+                        <h2 class="cta-title">Entre em Contato</h2>
+                        <p class="cta-text">Estamos aqui para ajudar você a fazer a diferença</p>
+                        
+                        <div class="card-grid" style="margin-top: 3rem;">
+                            <div class="info-card" style="background: rgba(255, 255, 255, 0.95);">
+                                <span class="info-card-icon">📞</span>
+                                <h3 class="info-card-title">Telefone</h3>
+                                <p class="info-card-text">(12) 1234-5678</p>
+                            </div>
+                            
+                            <div class="info-card" style="background: rgba(255, 255, 255, 0.95);">
+                                <span class="info-card-icon">✉️</span>
+                                <h3 class="info-card-title">Email</h3>
+                                <p class="info-card-text">propet@doacao.com.br</p>
+                            </div>
+                            
+                            <div class="info-card" style="background: rgba(255, 255, 255, 0.95);">
+                                <span class="info-card-icon">📍</span>
+                                <h3 class="info-card-title">Endereço</h3>
+                                <p class="info-card-text">Rua dos Animais, 123<br>Cidade Pet Land, Estado C/G</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3 class="footer-title">ONG ProPet</h3>
+                        <p>Cuidando, resgatando e conectando animais a novos lares desde 2020.</p>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-subtitle">Links Rápidos</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Nosso Lar</a></li>
+                            <li><a href="Projetos.html">Projetos</a></li>
+                            <li><a href="Cadastro-novo.html">Cadastro</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-subtitle">Contato</h4>
+                        <ul class="footer-links">
+                            <li>📞 (12) 1234-5678</li>
+                            <li>✉️ propet@doacao.com.br</li>
+                            <li>📍 Rua dos Animais, 123</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2024 ONG ProPet. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </body> 
+</html>
