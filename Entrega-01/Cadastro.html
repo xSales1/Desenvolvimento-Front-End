@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8"> <!-- usado para informar a codificação de caracteres -->
+        <meta name="viewport" content="width=device-width"> <!-- usado para informar a largura da viewport -->
+        <title>ONG ProPet</title> <!-- usado para informar o título da página -->
+    </head>
+    <body> <!-- usado para informar o corpo do documento -->
+        <header><!-- usado para informar o cabeçalho do documento -->
+            <img src="propet1.png" width="200" alt="Logo da ong ProPet">
+            <h1> ONG ProPet </h1>
+            <nav> <!-- usado para informar a navegação do documento -->
+                <ul>
+                    <li><a href="index.html">Nosso lar</a> </li><!-- usado para informar um link -->
+                    <li><a href="projetos.html">Projeto Social</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>Formulário</main> <!-- usado para informar o conteúdo principal do documento -->
+       <h2>Formulário</h2>
+        <form action="#" method="POST" class="formulario-cadastro">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                
+                <div class="campo-pessoal">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+                </div>
+
+                <div class="campo-pessoal">
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" min="18" required>
+                </div>
+
+                <div class="campo-pessoal">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                </div>
+
+                <div class="campo-pessoal">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required placeholder="(XX) XXXXX-XXXX">
+                </div>
+
+                <div class="campo-pessoal">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" required placeholder="000.000.000-00">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Endereço</legend>
+                
+                <div class="campo-endereco">
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" required placeholder="00000-000">
+                </div>
+
+                <div class="campo-endereco">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" required placeholder="Cidade Estado A/A">
+                </div>
+
+                <div class="campo-endereco">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" required placeholder="Rua xxxx, N xxx, Bairro xxxx">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informações do Voluntariado</legend>
+                
+                <div class="campo-voluntario">
+                    <label for="disponibilidade">Disponibilidade (horas por semana):</label>
+                    <input type="number" id="disponibilidade" name="disponibilidade" min="4" max="40" required>
+                </div>
+
+                <div class="campo-voluntario">
+                    <label for="experiencia">Experiência com animais:</label>
+                    <textarea id="experiencia" name="experiencia" rows="4"></textarea>
+                </div>
+
+                <fieldset class="interesses">
+                    <legend>Áreas de Interesse</legend>
+                    <div class="opcoes-interesse">
+                        <input type="checkbox" id="cuidados" name="interesses" value="cuidados">
+                        <label for="cuidados">Cuidados com os animais</label>
+
+                        <input type="checkbox" id="eventos" name="interesses" value="eventos">
+                        <label for="eventos">Eventos de adoção</label>
+
+                        <input type="checkbox" id="divulgacao" name="interesses" value="divulgacao">
+                        <label for="divulgacao">Divulgação nas redes sociais</label>
+
+                        <input type="checkbox" id="transporte" name="interesses" value="transporte">
+                        <label for="transporte">Transporte de animais</label>
+
+                        <input type="checkbox" id="administrativo" name="interesses" value="administrativo">
+                        <label for="administrativo">Trabalhos administrativos</label>
+
+                        <input type="checkbox" id="arrecadacao" name="interesses" value="arrecadacao">
+                        <label for="arrecadacao">Campanhas de arrecadação</label>
+
+                        <input type="checkbox" id="doacao" name="interesses" value="doacao">
+                        <label for="doacao">Doação</label>
+                    </div>
+                </fieldset>
+            </fieldset>
+
+            <div class="acoes-formulario">
+                <button type="submit" class="botao-enviar">Enviar Cadastro</button>
+            </div>
+        </form>
+            <footer> <!-- usado para informar o rodapé do documento -->
+            <p> &copy; 2024 ONG ProPet. Todos os direitos reservados. </p>      
+        </footer>
+    </body> 
+</html><!-- usado para informar o fim do documento HTML -->
