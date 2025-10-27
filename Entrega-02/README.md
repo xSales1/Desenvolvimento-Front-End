@@ -1,60 +1,82 @@
-# 📚 ONG ProPet - Site Completo CSS/HTML
+# 🐾 ONG ProPet - Site Completo HTML/CSS
 
-## 🎯 Início Rápido
+## Sobre o Projeto
 
-**� Primeira vez aqui? Leia:** [`INICIO-RAPIDO.md`](./INICIO-RAPIDO.md)
+Site completo para **ONG ProPet** desenvolvido com **HTML5 e CSS3** para fins educacionais. Esta é a **segunda entrega** do projeto acadêmico, evoluindo da versão anterior:
 
----
-
-## 📄 Sobre o Projeto
-
-Site completo para **ONG ProPet** desenvolvido usando **apenas HTML e CSS** (sem JavaScript) para fins educacionais.
-
-### ✨ Destaques:
-- ✅ **3 páginas completas** (Home, Projetos, Cadastro)
-- ✅ **Design system profissional** (80+ variáveis CSS)
-- ✅ **Responsivo** (6 breakpoints)
-- ✅ **Interativo sem JavaScript** (checkbox hack, hover dropdowns)
-- ✅ **Validação de formulários** (HTML5 + CSS)
-- ✅ **4000+ linhas de documentação**
+- **Entrega 01**: HTML puro (estrutura básica)
+- **Entrega 02**: HTML + CSS (design system profissional e responsividade)
 
 ---
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
-Projeto 02/
-│
-├── 📄 index.html              # Página inicial
-├── 📄 Projetos.html           # Voluntariado + Doações
-├── 📄 Cadastro-novo.html      # Formulário de cadastro
-│
-├── 📁 css/
+Entrega-02/
+├── 📄 index.html              # Página principal
+├── 📁 pages/                  # Páginas secundárias
+│   ├── projetos.html          # Voluntariado + Doações
+│   └── cadastro.html          # Formulário de cadastro
+├── 📁 css/                    # Folhas de estilo
 │   ├── design-system.css      # Variáveis CSS
 │   ├── layout.css             # Grid + responsividade
-│   ├── components.css         # Componentes
+│   ├── components.css         # Componentes UI
 │   └── main.css               # Estilos principais
-│
-└── 📁 docs/
-    ├── INICIO-RAPIDO.md       ⭐ Comece aqui!
-    ├── ATUALIZACAO-COMPLETA.md
-    ├── DESIGN-SYSTEM.md
-    ├── README-CSS-ONLY.md
-    ├── EXEMPLOS-CODIGO.md
-    ├── ESTRUTURA-PROJETO.md
-    └── ESPECIFICACOES-ATENDIDAS.md
+├── 📁 images/                 # Imagens do projeto
+│   ├── prop1.jpg             # Logo principal
+│   ├── prop2.jpg             # Imagem voluntários
+│   └── prop.jpg              # Imagem história
+└── 📄 README.md              # Este arquivo
 ```
 
 ---
 
-## 🚀 Como Usar
+## Especificações Técnicas Implementadas
+
+### Design System Profissional
+- **80+ variáveis CSS**: Sistema de tokens de design
+- **Paleta de cores**: 30+ tons organizados (primary, secondary, neutros)
+- **Tipografia**: 10 tamanhos de fonte hierárquicos
+- **Espaçamento**: 8 valores de espaçamento modular
+- **Componentes reutilizáveis**: 15+ componentes padronizados
+
+### Sistema Responsivo
+- **6 breakpoints**: Mobile-first approach
+- **CSS Grid**: Layout moderno e flexível
+- **Flexbox**: Alinhamento e distribuição
+- **Grid 12 colunas**: Sistema personalizado
+- **Adaptação completa**: Desktop, tablet e mobile
+
+### Técnicas CSS-Only (Sem JavaScript)
+- **Menu hambúrguer**: Checkbox hack para interatividade
+- **Dropdown hover**: Menus suspensos em CSS puro
+- **Validação HTML5**: Feedback visual sem JavaScript
+- **Animações CSS**: Transições e hover effects
+- **Estados visuais**: Indicadores de foco e hover
+
+---
+
+## Demonstração das Funcionalidades
+
+1. **Teste o design responsivo** redimensionando o navegador
+2. **Acesse a página de projetos** para ver o layout de cards
+3. **Preencha o formulário de cadastro** para testar validação HTML5
+4. **Use o menu hambúrguer** em telas menores (<768px)
+5. **Passe o mouse em "Projetos"** para ver o dropdown CSS-only
+6. **Navegue por teclado** para testar acessibilidade
+
+---
+
+## Como Usar
 
 ### 1. Visualizar
 ```bash
-# Clique 2x em qualquer arquivo:
-index.html          # Página inicial
-Projetos.html       # Projetos
-Cadastro-novo.html  # Cadastro
+# Clique 2x no arquivo principal:
+index.html                # Página principal
+
+# Ou navegue diretamente para:
+pages/projetos.html       # Página de projetos
+pages/cadastro.html       # Formulário de cadastro
 ```
 
 ### 2. Testar Responsividade
@@ -64,224 +86,39 @@ Cadastro-novo.html  # Cadastro
 3. Teste: 375px, 768px, 1024px, 1440px
 ```
 
-### 3. Testar Funcionalidades
-- **Menu hambúrguer:** Redimensione para mobile (<768px)
-- **Dropdown:** Passe mouse em "Projetos"
-- **Validação:** Preencha o formulário
+### 3. Testar Funcionalidades CSS-Only
+- **Menu hambúrguer**: Redimensione para mobile (<768px)
+- **Dropdown**: Passe mouse em "Projetos"
+- **Validação**: Preencha o formulário
 
 ---
 
-## 🎨 Design System
+## Tecnologias Utilizadas
 
-### Cores:
-- **30+ tons** organizados (primary, secondary, estados, neutros)
-- **10 tamanhos** de fonte hierárquicos
-- **8 valores** de espaçamento modular
-
-### Componentes:
-- ✅ Navegação responsiva (menu hambúrguer CSS-only)
-- ✅ Botões (3 tipos × 3 tamanhos × 4 estados)
-- ✅ Cards (5 variações)
-- ✅ Formulários com validação visual
-- ✅ Alerts, badges, tags
-- ✅ Grid 12 colunas
-
-### Breakpoints:
-```
-📱 XS:  480px   (mobile pequeno)
-📱 SM:  640px   (mobile médio)
-📱 MD:  768px   (tablet)
-💻 LG:  1024px  (desktop)
-💻 XL:  1280px  (desktop wide)
-🖥️ 2XL: 1536px  (ultra wide)
-```
+- **HTML5**: Estrutura semântica das páginas
+- **CSS3**: Design system completo, responsividade e animações
+- **CSS Grid & Flexbox**: Layouts modernos e responsivos
+- **CSS Variables**: Sistema de design tokens
+- **HTML5 Form Validation**: Validação nativa de formulários
 
 ---
 
-## 🎓 Técnicas CSS-Only (Sem JavaScript!)
-
-### 1. Menu Hambúrguer (Checkbox Hack)
-```html
-<input type="checkbox" id="menu-toggle">
-<label for="menu-toggle">☰</label>
-```
-Checkbox oculto controla visibilidade via CSS.
-
-### 2. Dropdown Hover
-```css
-.dropdown:hover .menu {
-  opacity: 1;
-  visibility: visible;
-}
-```
-
-### 3. Validação HTML5
-```html
-<input type="email" required pattern="...">
-```
-```css
-input:valid { border: green; }
-input:invalid { border: red; }
-```
-
-**👉 Detalhes:** [`README-CSS-ONLY.md`](./README-CSS-ONLY.md)
+### Competências Demonstradas:
+- ✅ **HTML5 semântico**: Estruturação profissional
+- ✅ **CSS moderno**: Variables, grid, flexbox
+- ✅ **Design system**: Sistema de design tokens robusto
+- ✅ **Responsive design**: Mobile-first approach
+- ✅ **Accessibility**: ARIA e navegação por teclado
+- ✅ **CSS-only techniques**: Interatividade sem JavaScript
+- ✅ **Code organization**: Estrutura modular de arquivos
+- ✅ **Documentation**: Documentação técnica completa
 
 ---
 
-## 📖 Documentação
+## 📝 Autoria
 
-| Arquivo | Descrição |
-|---------|-----------|
-| [`INICIO-RAPIDO.md`](./INICIO-RAPIDO.md) | ⭐ **Comece aqui!** Guia rápido |
-| [`ATUALIZACAO-COMPLETA.md`](./ATUALIZACAO-COMPLETA.md) | Resumo de tudo |
-| [`DESIGN-SYSTEM.md`](./DESIGN-SYSTEM.md) | Referência de componentes |
-| [`README-CSS-ONLY.md`](./README-CSS-ONLY.md) | Tutorial de técnicas CSS |
-| [`EXEMPLOS-CODIGO.md`](./EXEMPLOS-CODIGO.md) | Snippets prontos |
-| [`ESTRUTURA-PROJETO.md`](./ESTRUTURA-PROJETO.md) | Arquitetura completa |
-| [`ESPECIFICACOES-ATENDIDAS.md`](./ESPECIFICACOES-ATENDIDAS.md) | Checklist requisitos |
+**👨‍💻 Desenvolvedor**: Gabriel Sales da Silva  
+**📅 Data**: 2024/2025  
+**🎓 Contexto**: Projeto acadêmico - Entrega 02 - CSS  
 
----
-
-## 📊 Métricas
-
-### Código:
-```
-✅ 3 páginas HTML (1200+ linhas)
-✅ 4 arquivos CSS (2800+ linhas)
-✅ 80+ variáveis CSS
-✅ 15+ componentes
-✅ 0 linhas JavaScript
-```
-
-### Documentação:
-```
-📖 7 arquivos markdown
-📖 4000+ linhas de docs
-📖 100+ exemplos
-```
-
----
-
-## 🎯 Funcionalidades
-
-### Páginas:
-- **index.html** - Página inicial com história, missão/visão/valores
-- **Projetos.html** - Voluntariado e doações
-- **Cadastro-novo.html** - Formulário com validação
-
-### Interações (sem JS):
-- ✅ Menu hambúrguer animado
-- ✅ Dropdown em hover
-- ✅ Validação visual de formulários
-- ✅ Cards com hover effects
-- ✅ Navegação por teclado (acessível)
-
----
-
-## ✅ Requisitos Atendidos
-
-- ✅ Design system com variáveis CSS
-- ✅ 30+ cores organizadas
-- ✅ 10 tamanhos de fonte
-- ✅ Sistema de espaçamento modular
-- ✅ CSS Grid no layout
-- ✅ Grid 12 colunas customizado
-- ✅ 6 breakpoints responsivos
-- ✅ Menu responsivo (checkbox hack)
-- ✅ Menu hambúrguer animado
-- ✅ Dropdown CSS-only
-- ✅ Sistema de cards
-- ✅ Botões com estados visuais
-- ✅ Formulários com validação
-- ✅ Alerts, badges, tags
-- ✅ Documentação completa
-
-**👉 Detalhes:** [`ESPECIFICACOES-ATENDIDAS.md`](./ESPECIFICACOES-ATENDIDAS.md)
-
----
-
-## 🚀 Acesso Rápido
-
-### Visualizar Páginas:
-- [`index.html`](./index.html) - Página inicial
-- [`Projetos.html`](./Projetos.html) - Projetos
-- [`Cadastro-novo.html`](./Cadastro-novo.html) - Cadastro
-
-### CSS:
-- [`css/design-system.css`](./css/design-system.css) - Variáveis
-- [`css/layout.css`](./css/layout.css) - Grid
-- [`css/components.css`](./css/components.css) - Componentes
-- [`css/main.css`](./css/main.css) - Principais
-
----
-
-## 💡 Dicas
-
-### Para Desenvolvedores:
-1. Leia [`README-CSS-ONLY.md`](./README-CSS-ONLY.md) (técnicas)
-2. Consulte [`DESIGN-SYSTEM.md`](./DESIGN-SYSTEM.md) (referência)
-3. Copie de [`EXEMPLOS-CODIGO.md`](./EXEMPLOS-CODIGO.md) (snippets)
-
-### Para Avaliadores:
-1. Leia [`INICIO-RAPIDO.md`](./INICIO-RAPIDO.md) (5 min)
-2. Teste demo ao vivo (5 min)
-3. Veja [`ESPECIFICACOES-ATENDIDAS.md`](./ESPECIFICACOES-ATENDIDAS.md) (checklist)
-
----
-
-## 🎓 Objetivos Educacionais
-
-Este projeto demonstra:
-- ✅ HTML semântico
-- ✅ CSS moderno (variables, grid, flexbox)
-- ✅ Design system profissional
-- ✅ Responsividade mobile-first
-- ✅ Acessibilidade (ARIA, keyboard nav)
-- ✅ Técnicas CSS-only avançadas
-- ✅ Documentação técnica completa
-
----
-
-## 📞 Suporte
-
-**Dúvidas?** Consulte a documentação:
-- 🚀 [`INICIO-RAPIDO.md`](./INICIO-RAPIDO.md) - Como usar
-- 🎨 [`DESIGN-SYSTEM.md`](./DESIGN-SYSTEM.md) - Componentes
-- 💡 [`README-CSS-ONLY.md`](./README-CSS-ONLY.md) - Técnicas
-- 📝 [`EXEMPLOS-CODIGO.md`](./EXEMPLOS-CODIGO.md) - Código
-
----
-
-## 👨‍💻 Autor
-
-**Gabriel**
-- Projeto acadêmico - 2024/2025
-- Faculdade
-
----
-
-## 📄 Licença
-
-MIT License - Projeto educacional
-
----
-
-## 🐾 Sobre a ONG ProPet
-
-**ProPet** - Cuidando, resgatando e conectando animais a novos lares desde 2020.
-
-### Missão:
-Resgatar, cuidar e encontrar lares amorosos para animais abandonados, promovendo o bem-estar animal e a conscientização sobre a importância da adoção responsável.
-
-### Contato:
-- 📞 (12) 1234-5678
-- ✉️ propet@doacao.com.br
-- 📍 Rua dos Animais, 123 - Cidade Pet Land, Estado C/G
-
----
-
-**🎉 Pronto para usar! Comece por [`INICIO-RAPIDO.md`](./INICIO-RAPIDO.md) ✨**
-
----
-
-*Desenvolvido com ❤️ para fins educacionais*
+*Desenvolvido para fins educacionais - Demonstração completa de HTML5 e CSS3*
