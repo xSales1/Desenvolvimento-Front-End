@@ -1,0 +1,314 @@
+/* ==========================================================================
+   ACESSIBILIDADE - WCAG 2.1 AA
+   ========================================================================== */
+
+/* ------ SKIP NAVIGATION ------ */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--color-primary-600);
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 0 0 4px 4px;
+    z-index: 9999;
+    font-weight: 600;
+    transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* ------ FOCO VISÍVEL ------ */
+:focus {
+    outline: 3px solid var(--color-primary-500);
+    outline-offset: 2px;
+}
+
+.btn:focus {
+    outline: 3px solid var(--color-primary-200);
+    outline-offset: 3px;
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+    outline: 3px solid var(--color-primary-500);
+    outline-offset: 1px;
+    border-color: var(--color-primary-600);
+}
+
+/* ------ NAVEGAÇÃO POR TECLADO ------ */
+.nav-link:focus,
+.dropdown-item:focus {
+    background-color: var(--color-primary-100);
+    color: var(--color-primary-800);
+}
+
+/* ------ CONTRASTE E CORES ACESSÍVEIS ------ */
+:root {
+    /* Cores com contraste mínimo 4.5:1 */
+    --color-text-high-contrast: #1a1a1a;
+    --color-text-medium: #4a4a4a;
+    --color-link-accessible: #0056b3;
+    --color-error-accessible: #d73527;
+    --color-success-accessible: #0f5132;
+    --color-warning-accessible: #664d03;
+}
+
+/* ------ MODO ALTO CONTRASTE ------ */
+@media (prefers-contrast: high) {
+    :root {
+        --color-text: var(--color-text-high-contrast);
+        --color-primary-600: #000080;
+        --color-primary-700: #000066;
+        --color-background: #ffffff;
+        --color-border: #000000;
+    }
+    
+    .btn {
+        border: 2px solid currentColor;
+    }
+    
+    .card,
+    .info-card {
+        border: 2px solid var(--color-border);
+    }
+}
+
+/* ------ MODO ESCURO ACESSÍVEL ------ */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-background: #121212;
+        --color-surface: #1e1e1e;
+        --color-text: #e1e1e1;
+        --color-text-secondary: #b3b3b3;
+        --color-primary-600: #4f8fff;
+        --color-primary-700: #3d7ce6;
+        --color-border: #333333;
+        --color-neutral-100: #2a2a2a;
+        --color-neutral-200: #404040;
+        --color-neutral-900: #e1e1e1;
+    }
+    
+    body {
+        background-color: var(--color-background);
+        color: var(--color-text);
+    }
+    
+    .card,
+    .info-card,
+    .form-input,
+    .form-textarea {
+        background-color: var(--color-surface);
+        border-color: var(--color-border);
+        color: var(--color-text);
+    }
+    
+    .header-fixed {
+        background-color: var(--color-surface);
+        border-bottom: 1px solid var(--color-border);
+    }
+    
+    .footer {
+        background-color: var(--color-surface);
+        border-top: 1px solid var(--color-border);
+    }
+}
+
+/* ------ REDUÇÃO DE MOVIMENTO ------ */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .scroll-smooth {
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ------ TAMANHOS DE FONTE ACESSÍVEIS ------ */
+@media (prefers-reduced-data: reduce) {
+    /* Reduzir animações e efeitos em conexões lentas */
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* ------ ÁREAS DE TOQUE MÍNIMAS (44x44px) ------ */
+.btn,
+.nav-link,
+.dropdown-item,
+.checkbox-card {
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ------ INDICADORES DE ERRO ACESSÍVEIS ------ */
+.form-error {
+    color: var(--color-error-accessible);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.form-error::before {
+    content: "⚠";
+    font-size: 1.2em;
+}
+
+.form-input[aria-invalid="true"] {
+    border-color: var(--color-error-accessible);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23d73527'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath d='M6 3v2.5M6 8.5v0'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px 16px;
+}
+
+.form-input[aria-invalid="false"] {
+    border-color: var(--color-success-accessible);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%230f5132'%3e%3cpoly points='9,3 5,7 3,5'%3e%3c/poly%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px 16px;
+}
+
+/* ------ ANÚNCIOS PARA LEITORES DE TELA ------ */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: inherit;
+    margin: inherit;
+    overflow: visible;
+    clip: auto;
+}
+
+/* ------ NAVEGAÇÃO ARIA ------ */
+[role="navigation"] {
+    position: relative;
+}
+
+[aria-current="page"] {
+    font-weight: 700;
+    position: relative;
+}
+
+[aria-current="page"]::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: var(--color-primary-600);
+    border-radius: 2px;
+}
+
+/* ------ LOADING E ESTADOS ------ */
+[aria-busy="true"] {
+    cursor: wait;
+    opacity: 0.7;
+}
+
+[aria-busy="true"]::after {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+    border: 2px solid var(--color-primary-600);
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ------ NOTIFICAÇÕES ACESSÍVEIS ------ */
+.toast {
+    border-left: 4px solid var(--color-primary-600);
+}
+
+.toast[role="alert"] {
+    border-left-color: var(--color-error-accessible);
+}
+
+.toast[role="status"] {
+    border-left-color: var(--color-success-accessible);
+}
+
+/* ------ MELHORIAS DE USABILIDADE ------ */
+.form-label {
+    cursor: pointer;
+}
+
+.form-required::after {
+    content: " *";
+    color: var(--color-error-accessible);
+    font-weight: bold;
+}
+
+/* ------ MODAL E DIALOG ACESSÍVEL ------ */
+.modal[aria-hidden="true"] {
+    display: none;
+}
+
+.modal[aria-hidden="false"] {
+    display: flex;
+}
+
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(2px);
+}
+
+/* ------ PRINT STYLES ------ */
+@media print {
+    .skip-link,
+    .btn,
+    .nav-main,
+    .footer {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+        color: #000;
+        background: #fff;
+    }
+    
+    .hero-title,
+    .section-title {
+        color: #000 !important;
+        font-size: 18pt;
+        margin-bottom: 12pt;
+    }
+}

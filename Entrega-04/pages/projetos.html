@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projetos - ONG ProPet</title>
+        
+        <!-- CSS Design System -->
+        <link rel="stylesheet" href="../css/design-system.css">
+        <link rel="stylesheet" href="../css/layout.css">
+        <link rel="stylesheet" href="../css/components.css">
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body>
+        <!-- Menu Toggle (Checkbox Hack) -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-input">
+        
+        <!-- Header -->
+        <header class="header-fixed">
+            <div class="container">
+                <nav class="nav-main">
+                    <!-- Logo -->
+                    <a href="../index.html" class="nav-brand">
+                        <img src="../images/prop1.jpg" alt="Logo da ONG ProPet" class="logo">
+                        <h1 class="brand-title">ProPet</h1>
+                    </a>
+                    
+                    <!-- Hamburger Menu -->
+                    <label for="menu-toggle" class="menu-toggle-label" aria-label="Menu">
+                        <span class="hamburger-icon"></span>
+                    </label>
+                    
+                    <!-- Navigation -->
+                    <nav class="nav-desktop" aria-label="Navegação principal">
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a href="../index.html" class="nav-link">Nosso Lar</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="projetos.html" class="nav-link active" aria-current="page">
+                                    Projetos
+                                    <svg class="icon-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#voluntariado" class="dropdown-item">Voluntariado</a></li>
+                                    <li><a href="#doacoes" class="dropdown-item">Doações</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="cadastro.html" class="nav-link">Cadastro</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </nav>
+            </div>
+        </header>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section class="hero hero-compact">
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="badge badge-primary">🤝 Faça Parte</span>
+                        <h2 class="hero-title" style="color: white;">Voluntariado e Doações</h2>
+                        <p class="hero-subtitle" style="color: white;">
+                            ProPet — Cuidando, resgatando e conectando animais a novos lares.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Voluntariado -->
+            <section id="voluntariado" class="section">
+                <div class="container">
+                    <h2 class="section-title">Seja um Voluntário</h2>
+                    <p class="section-subtitle">Você ama animais e quer fazer a diferença? Junte-se à nossa equipe!</p>
+                    
+                    <div class="content-grid">
+                        <div class="content-text">
+                            <h3>Como Você Pode Ajudar:</h3>
+                            <ul class="info-card-text">
+                                <li>🐾 Auxiliar nos cuidados diários dos animais</li>
+                                <li>🎉 Participar de eventos de adoção</li>
+                                <li>📱 Ajudar na divulgação nas redes sociais</li>
+                                <li>🚗 Transportar animais para consultas veterinárias</li>
+                                <li>📋 Contribuir com trabalhos administrativos</li>
+                                <li>💰 Auxiliar em campanhas de arrecadação</li>
+                            </ul>
+                            
+                            <div class="alert alert-info" style="margin-top: 2rem;">
+                                <svg class="alert-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2Z" fill="currentColor" opacity="0.2"/>
+                                    <path d="M10 6V10M10 14H10.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                                <div class="alert-content">
+                                    <p class="alert-title">Disponibilidade</p>
+                                    <p>Disponibilidade mínima de 4 horas semanais com comprometimento e amor pelos animais.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="content-image">
+                            <img src="../images/prop2.jpg" alt="Voluntários da ProPet">
+                            
+                            <div class="info-card" style="margin-top: 2rem;">
+                                <h4 class="info-card-title">📋 Requisitos</h4>
+                                <ul class="info-card-text">
+                                    <li>✓ Ter mais de 18 anos</li>
+                                    <li>✓ Disponibilidade mínima de 4 horas semanais</li>
+                                    <li>✓ Comprometimento e responsabilidade</li>
+                                    <li>✓ Amor pelos animais</li>
+                                </ul>
+                                <a href="cadastro.html" class="btn btn-primary" style="width: 100%; margin-top: 1.5rem;">
+                                    <svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M10 5V15M5 10H15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                    Quero ser Voluntário
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Doações -->
+            <section id="doacoes" class="section section-alt">
+                <div class="container">
+                    <h2 class="section-title">Como Doar</h2>
+                    <p class="section-subtitle">Sua doação faz a diferença na vida dos nossos animais!</p>
+                    
+                    <div class="card-grid">
+                        <!-- Doação Financeira -->
+                        <article class="info-card">
+                            <span class="info-card-icon">💰</span>
+                            <h3 class="info-card-title">Doação Financeira</h3>
+                            <p class="info-card-text" style="margin-bottom: 1rem;">Faça sua contribuição via:</p>
+                            
+                            <div class="alert alert-success">
+                                <div class="alert-content">
+                                    <p class="alert-title">Dados Bancários:</p>
+                                    <ul style="list-style: none; padding: 0; font-size: 0.875rem;">
+                                        <li><strong>Banco:</strong> Dog Bank</li>
+                                        <li><strong>Agência:</strong> 1000</li>
+                                        <li><strong>Conta:</strong> 02000-0</li>
+                                        <li><strong>PIX:</strong> 12.345.678/0001-00</li>
+                                        <li><strong>Titular:</strong> ONG ProPet</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <span class="badge badge-success" style="margin-top: 1rem;">Mais Rápido</span>
+                        </article>
+                        
+                        <!-- Doação de Itens -->
+                        <article class="info-card">
+                            <span class="info-card-icon">📦</span>
+                            <h3 class="info-card-title">Doação de Itens</h3>
+                            <p class="info-card-text" style="margin-bottom: 1rem;">Aceitamos:</p>
+                            <ul class="info-card-text">
+                                <li>✓ Ração para cães e gatos</li>
+                                <li>✓ Medicamentos veterinários</li>
+                                <li>✓ Produtos de limpeza</li>
+                                <li>✓ Cobertores e mantas</li>
+                                <li>✓ Caminhas e casinhas</li>
+                                <li>✓ Brinquedos para pets</li>
+                            </ul>
+                        </article>
+                        
+                        <!-- Ponto de Coleta -->
+                        <article class="info-card">
+                            <span class="info-card-icon">📍</span>
+                            <h3 class="info-card-title">Ponto de Coleta</h3>
+                            
+                            <div class="alert alert-info">
+                                <div class="alert-content">
+                                    <p style="font-size: 0.875rem; margin-bottom: 0.5rem;">
+                                        <strong>Endereço:</strong><br>
+                                        Rua dos Animais, 123<br>
+                                        Cidade Pet Land, Estado C/G
+                                    </p>
+                                    <p style="font-size: 0.875rem; margin: 0;">
+                                        <strong>Horário:</strong><br>
+                                        Segunda a Sexta<br>
+                                        9h às 17h
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <!-- CTA Doador Mensal -->
+                    <div class="cta-section" style="margin-top: 4rem; padding: 3rem; border-radius: 1rem;">
+                        <div class="cta-content">
+                            <h3 class="cta-title">💙 Seja um Doador Mensal</h3>
+                            <p class="cta-text">
+                                Contribua mensalmente com qualquer valor e ajude a manter nosso trabalho de resgate e cuidado.
+                            </p>
+                            <a href="cadastro.html" class="btn btn-primary btn-lg" style="background: white; color: var(--color-primary-600);">
+                                <svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M3.33301 9.99996C3.33301 9.99996 6.66634 3.33329 9.99967 3.33329C13.333 3.33329 16.6663 9.99996 16.6663 9.99996C16.6663 9.99996 13.333 16.6666 9.99967 16.6666C6.66634 16.6666 3.33301 9.99996 3.33301 9.99996Z" stroke="currentColor" stroke-width="1.5"/>
+                                    <circle cx="10" cy="10" r="2.5" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                                Quero ser Doador Mensal
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Contato -->
+            <section class="section">
+                <div class="container">
+                    <h2 class="section-title">Entre em Contato</h2>
+                    <p class="section-subtitle">Estamos aqui para responder suas dúvidas</p>
+                    
+                    <div class="card-grid">
+                        <div class="info-card">
+                            <span class="info-card-icon">📞</span>
+                            <h3 class="info-card-title">Telefone</h3>
+                            <p class="info-card-text">(12) 1234-5678</p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <span class="info-card-icon">✉️</span>
+                            <h3 class="info-card-title">Email</h3>
+                            <p class="info-card-text">propet@doacao.com.br</p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <span class="info-card-icon">📍</span>
+                            <h3 class="info-card-title">Endereço</h3>
+                            <p class="info-card-text">Rua dos Animais, 123<br>Cidade Pet Land, Estado C/G</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3 class="footer-title">ONG ProPet</h3>
+                        <p>Cuidando, resgatando e conectando animais a novos lares desde 2020.</p>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-subtitle">Links Rápidos</h4>
+                        <ul class="footer-links">
+                            <li><a href="../index.html">Nosso Lar</a></li>
+                            <li><a href="projetos.html">Projetos</a></li>
+                            <li><a href="cadastro.html">Cadastro</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-subtitle">Contato</h4>
+                        <ul class="footer-links">
+                            <li>📞 (12) 1234-5678</li>
+                            <li>✉️ propet@doacao.com.br</li>
+                            <li>📍 Rua dos Animais, 123</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2024 ONG ProPet. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </body> 
+</html>

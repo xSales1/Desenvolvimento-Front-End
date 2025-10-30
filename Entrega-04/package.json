@@ -1,0 +1,104 @@
+{
+  "name": "ong-propet-final",
+  "version": "1.0.0",
+  "description": "Site da ONG ProPet - Versão Final com Acessibilidade e Otimização para Produção",
+  "main": "src/index.html",
+  "scripts": {
+    "dev": "live-server src/ --port=3000 --open=/",
+    "build": "npm run build:css && npm run build:js && npm run build:html && npm run build:images",
+    "build:css": "npm run minify:css && npm run postcss",
+    "build:js": "npm run minify:js",
+    "build:html": "npm run minify:html",
+    "build:images": "npm run optimize:images",
+    "build:prod": "npm run clean && npm run build && npm run copy:assets",
+    "clean": "rimraf dist/",
+    "copy:assets": "npm run copy:html && npm run copy:css && npm run copy:js && npm run copy:images",
+    "copy:html": "copyfiles -u 1 'src/*.html' dist/",
+    "copy:css": "copyfiles -u 2 'src/css/*.css' dist/css/",
+    "copy:js": "copyfiles -u 2 'src/js/*.js' dist/js/",
+    "copy:images": "copyfiles -u 2 'src/images/*' dist/images/",
+    "minify:css": "cleancss -o dist/css/styles.min.css src/css/*.css",
+    "minify:js": "terser src/js/*.js -o dist/js/scripts.min.js --compress --mangle",
+    "minify:html": "html-minifier --input-dir src --output-dir dist --file-ext html --remove-comments --collapse-whitespace --minify-css --minify-js",
+    "optimize:images": "imagemin 'src/images/*' --out-dir=dist/images --plugin=imagemin-mozjpeg --plugin=imagemin-pngquant",
+    "postcss": "postcss dist/css/styles.min.css --use autoprefixer cssnano --output dist/css/styles.min.css",
+    "lint": "npm run lint:css && npm run lint:js",
+    "lint:css": "stylelint 'src/css/*.css'",
+    "lint:js": "eslint 'src/js/*.js'",
+    "format": "prettier --write 'src/**/*.{html,css,js}'",
+    "a11y:audit": "pa11y http://localhost:3000 --reporter cli",
+    "a11y:test": "axe http://localhost:3000",
+    "lighthouse": "lighthouse http://localhost:3000 --output html --output-path ./lighthouse-report.html",
+    "serve:dist": "live-server dist/ --port=8080",
+    "deploy": "npm run build:prod && gh-pages -d dist",
+    "release": "standard-version",
+    "version": "npm run build:prod && git add dist/",
+    "preversion": "npm run lint && npm run build:prod",
+    "postversion": "git push && git push --tags",
+    "analyze": "npm run build:prod && bundlesize"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xSales1/Desenvolvimento-Front-End.git"
+  },
+  "keywords": [
+    "ong",
+    "animais",
+    "acessibilidade",
+    "wcag",
+    "spa",
+    "html5",
+    "css3",
+    "javascript",
+    "frontend",
+    "responsivo"
+  ],
+  "author": "Gabriel Sales da Silva",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "axe-cli": "^4.8.1",
+    "bundlesize": "^0.18.1",
+    "clean-css-cli": "^5.6.2",
+    "copyfiles": "^2.4.1",
+    "cssnano": "^6.0.1",
+    "eslint": "^8.55.0",
+    "gh-pages": "^6.1.0",
+    "html-minifier": "^4.0.0",
+    "imagemin": "^8.0.1",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "lighthouse": "^11.4.0",
+    "live-server": "^1.2.2",
+    "pa11y": "^7.0.0",
+    "postcss": "^8.4.32",
+    "postcss-cli": "^11.0.0",
+    "prettier": "^3.1.1",
+    "rimraf": "^5.0.5",
+    "standard-version": "^9.5.0",
+    "stylelint": "^16.0.2",
+    "stylelint-config-standard": "^35.0.0",
+    "terser": "^5.26.0"
+  },
+  "dependencies": {},
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ],
+  "bundlesize": [
+    {
+      "path": "dist/css/styles.min.css",
+      "maxSize": "50kb"
+    },
+    {
+      "path": "dist/js/scripts.min.js",
+      "maxSize": "100kb"
+    }
+  ],
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
